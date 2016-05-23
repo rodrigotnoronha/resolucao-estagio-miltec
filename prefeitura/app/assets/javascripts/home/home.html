@@ -1,10 +1,10 @@
 <div style="text-align: center;">
 	<div>
 		<h3>Dados da prefeitura</h3>
-		<form class="form-inline">
+		<form class="form-inline" ng-submit="submitVerba(params)">
 		  <div class="form-group">
 		    <label class="sr-only" for="exampleInputEmail3">Verba disponível</label>
-		    <input type="number" class="form-control" id="exampleInputEmail3" placeholder="Verba disponível">
+		    <input type="number" class="form-control" id="exampleInputEmail3" placeholder="Verba disponível" ng-model="params.verba">
 		  </div>
 		  <div class="form-group">
 		    <label class="sr-only" for="exampleInputPassword3">Número de servidores</label>
@@ -15,4 +15,15 @@
 	</div>
 </div>
 
-<a class="btn btn-default">Colaboradores</a>
+<div style="text-align: center;">
+	<div>
+		<h3>Colaboradores</h3>
+		<ul>
+			<li ng-repeat="colaborator in colaborators">
+				Nome: {{colaborator.name}} / Idade: {{colaborator.age}} / Salário: {{colaborator.salary}}  / <a ui-sref="colaborators-edit({id: colaborator.id})">Editar</a> / <a ng-click="deleteColaborator(colaborator.id)">Apagar</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<a ui-sref="colaborators-new" class="btn btn-default">Adicionar colaborador</a>

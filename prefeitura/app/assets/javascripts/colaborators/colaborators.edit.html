@@ -1,0 +1,22 @@
+<div style="text-align: center;" ng-init="getColaborator()">
+	<div>
+		<h3>Novo colaborador</h3>
+		<form class="form" ng-submit="editColaborator(colaborator)">
+		  <div class="form-group">
+		    <label class="sr-only">Nome</label>
+		    <input type="text" class="form-control" placeholder="Nome" ng-model="colaborator.name">
+		  </div>
+			<div class="form-group">
+		    <label class="sr-only">Idade</label>
+		    <input type="number" class="form-control" placeholder="Idade" ng-model="colaborator.age">
+		  </div>
+		  <div class="form-group">
+		    <label class="sr-only">Salário</label>
+		    <input type="number" class="form-control" placeholder="Salário" ng-model="colaborator.salary">
+		  </div>
+		  <button type="submit" class="btn btn-default">Enviar dados</button>
+		</form>
+	</div>
+</div>
+
+<a ui-sref="home" class="btn btn-default">Voltar</a>

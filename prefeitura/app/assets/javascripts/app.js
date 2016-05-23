@@ -11,5 +11,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
       url: "/",
       templateUrl: "home/home.html",
       controller: 'HomeCtrl'
-  });
+    })
+    .state('colaborators-new',{
+      url: "/colaborators/new",
+      templateUrl: "colaborators/colaborators.new.html",
+      controller: 'ColaboratorsCtrl'
+    })
+    .state('colaborators-edit',{
+      url: "/colaborators/{id:int}",
+      templateUrl: "colaborators/colaborators.edit.html",
+      controller: 'ColaboratorsCtrl'
+    });
 });

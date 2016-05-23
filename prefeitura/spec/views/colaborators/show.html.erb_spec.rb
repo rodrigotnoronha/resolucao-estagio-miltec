@@ -4,8 +4,8 @@ describe "colaborators/show" do
   before(:each) do
     @colaborator = assign(:colaborator, stub_model(Colaborator,
       :name => "Name",
-      :idade => 1,
-      :salario => 1.5
+      :age => 1,
+      :salary => 1.5
     ))
   end
 

@@ -1,0 +1,39 @@
+{:uriI"òfile://app/assets/javascripts/colaborators/colaborators.index.html?type=text/ng-html&id=a017f82c03c1275fe0faf95bbf4d882c46a770cc2c595bc3fedccb46c1a4264d:ET:load_pathI"app/assets/javascripts;T:filenameI"@app/assets/javascripts/colaborators/colaborators.index.html;T:	nameI"$colaborators/colaborators.index;T:logical_pathI")colaborators/colaborators.index.html;T:content_typeI"text/ng-html;T:sourceI"<div style="text-align: center;">
+	<div>
+		<h3>Colaboradores</h3>
+		<ul>
+			<li ng-repeat="colaborator in colaborators">
+				Nome: {{colaborator.name}} / Idade: {{colaborator.age}} / Sal√°rio: {{colaborator.salary}}
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div style="text-align: center;">
+	<div>
+		<h3>Novo colaborador</h3>
+		<form class="form" ng-submit="createColaborator(data)">
+		  <div class="form-group">
+		    <label class="sr-only">Nome</label>
+		    <input type="text" class="form-control" placeholder="Nome" ng-model="data.name">
+		  </div>
+			<div class="form-group">
+		    <label class="sr-only">Idade</label>
+		    <input type="number" class="form-control" placeholder="Idade" ng-model="data.age">
+		  </div>
+		  <div class="form-group">
+		    <label class="sr-only">Sal√°rio</label>
+		    <input type="number" class="form-control" placeholder="Sal√°rio" ng-model="data.salary">
+		  </div>
+		  <button type="submit" class="btn btn-default">Enviar dados</button>
+		</form>
+	</div>
+</div>
+
+<a ui-sref="home" class="btn btn-default">Voltar</a>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Nfile-digest://app/assets/javascripts/colaborators/colaborators.index.html;TTF:charsetI"
+utf-8;F:digest"%&,d‰i|~Nã‰[–Íôs#ä¡˝HﬂŸu%~s≠†∆˛:lengthi:dependencies_digest"%
+'ñßTñ~àãÓä§Mê∏Fçı·k◊c"S0…:idI"Ea017f82c03c1275fe0faf95bbf4d882c46a770cc2c595bc3fedccb46c1a4264d;F:
+mtimel+CW

@@ -4,8 +4,8 @@ describe "colaborators/edit" do
   before(:each) do
     @colaborator = assign(:colaborator, stub_model(Colaborator,
       :name => "MyString",
-      :idade => 1,
-      :salario => 1.5
+      :age => 1,
+      :salary => 1.5
     ))
   end
 
@@ -15,8 +15,8 @@ describe "colaborators/edit" do
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "form[action=?][method=?]", colaborator_path(@colaborator), "post" do
       assert_select "input#colaborator_name[name=?]", "colaborator[name]"
-      assert_select "input#colaborator_idade[name=?]", "colaborator[idade]"
-      assert_select "input#colaborator_salario[name=?]", "colaborator[salario]"
+      assert_select "input#colaborator_age[name=?]", "colaborator[age]"
+      assert_select "input#colaborator_salary[name=?]", "colaborator[salary]"
     end
   end
 end
